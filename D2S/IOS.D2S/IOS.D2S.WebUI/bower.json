@@ -1,0 +1,39 @@
+{
+  "name": "d2s",
+  "version": "0.1.1",
+  "description": "Kiosk application.",
+  "dependencies": {
+    "jquery": "~2.1.x",
+    "jquery-ui": "~1.11.x",
+    "jquery-custom-scrollbar": "0.5.x",
+    "bootstrap": "~3.3.*",
+    "angular": "~1.4.*",
+    "angular-resource": "~1.4.*",
+    "angular-animate": "~1.4.*",
+    "angular-mocks": "~1.4.*",
+    "angular-bootstrap": "~2.1.*",
+    "angular-ui-utils": "~3.0.*",
+    "angular-route": "~1.2.6",
+    "angular-ui-router": "~0.2.*",
+    "fontawesome": "~4.5.*",
+    "ngInfiniteScroll": "~1.2.*",
+    "angular-sanitize": "~1.4.*",
+    "underscore": "~1.8.3",
+    "angular-local-storage": "~0.2.x",
+    "flexslider": "~2.6.x",
+    "angular-google-maps": "^2.3.2",
+    "angular-file-upload": "^2.2.0",
+    "ng-table": "^0.8.3",
+    "iCheck": "icheck#^1.0.2",
+    "bootstrap3-dialog": "bootstrap-dialog#^1.35.1",
+    "angular-moment": "^0.10.3",
+    "angular-underscore-module": "^1.0.3",
+    "isteven-angular-multiselect": "~4.0.0",
+    "angular-ui-grid": "^3.1.1",
+    "crypto-js": "^3.1.6",
+    "angular-bootstrap-colorpicker": "^3.0.25"
+  },
+  "resolutions": {
+    "angular": "1.2 - 1.5"
+  }
+}

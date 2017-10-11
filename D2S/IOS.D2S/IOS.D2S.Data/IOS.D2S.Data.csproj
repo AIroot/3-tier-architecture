@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9928DB39-EB2A-43AC-873A-D0B15B6ADDA8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IOS.D2S.Data</RootNamespace>
+    <AssemblyName>IOS.D2S.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AUTCommands\AUTDataManager.cs" />
+    <Compile Include="AUTCommands\CommandActions\DeleteUserGroupByGroupIdAction.cs" />
+    <Compile Include="AUTCommands\CommandActions\GetFeatureByRoleModuleAction.cs" />
+    <Compile Include="AUTCommands\CommandActions\GetModulesByRoleAction.cs" />
+    <Compile Include="AUTCommands\CommandActions\GetOperationsAction.cs" />
+    <Compile Include="AUTCommands\CommandActions\GetUserGroupsByBranchIdAction.cs" />
+    <Compile Include="AUTCommands\CommandActions\InsertOrUpdateRolePrivilageAction.cs" />
+    <Compile Include="AUTCommands\CommandActions\InsertOrUpdateUserGroupAction.cs" />
+    <Compile Include="AUTCommands\CommandActions\DeleteUserRoleByRoleIdAction.cs" />
+    <Compile Include="AUTCommands\CommandActions\DeleteUserByUserIdAction.cs" />
+    <Compile Include="AUTCommands\CommandActions\GetUserRolesByBranchIdAction.cs" />
+    <Compile Include="AUTCommands\CommandActions\GetUserByBranchIdAction.cs" />
+    <Compile Include="AUTCommands\CommandActions\GetUserByCredentialsAction.cs" />
+    <Compile Include="AUTCommands\CommandActions\InsertOrUpdateUserRoleAction.cs" />
+    <Compile Include="AUTCommands\CommandActions\InsertOrUpdateUserAction.cs" />
+    <Compile Include="KIOSKCommands\FileImportServiceActions\InsertOrUpdateCheckInDropOffAction.cs" />
+    <Compile Include="KIOSKCommands\FileImportServiceActions\InsertOrUpdateCheckInStatAction.cs" />
+    <Compile Include="KIOSKCommands\FileImportServiceActions\InsertOrUpdateCheckOutStatAction.cs" />
+    <Compile Include="KIOSKCommands\FileImportServiceActions\InsertOrUpdateDBSTransLogAction.cs" />
+    <Compile Include="KIOSKCommands\FileImportServiceActions\InsertOrUpdateDevicesStatAction.cs" />
+    <Compile Include="KIOSKCommands\FileImportServiceActions\InsertOrUpdateGuestArrivalFormAction.cs" />
+    <Compile Include="KIOSKCommands\FileImportServiceActions\InsertOrUpdateGuestPaymentReceiptAction.cs" />
+    <Compile Include="KIOSKCommands\FileImportServiceActions\InsertOrUpdateGuestScanDataAction.cs" />
+    <Compile Include="KIOSKCommands\FileImportServiceActions\InsertOrUpdateGuestScanImageAction.cs" />
+    <Compile Include="KIOSKCommands\FileImportServiceActions\InsertOrUpdateGuestTaxInvoiceAction.cs" />
+    <Compile Include="KIOSKCommands\KIOSKDataManager.cs" />
+    <Compile Include="KIOSKCommands\MonitoringServiceActions\InsertOrUpdateAppSettingsAction.cs" />
+    <Compile Include="KIOSKCommands\MonitoringServiceActions\InsertOrUpdateEmailSettingsAction.cs" />
+    <Compile Include="KIOSKCommands\MonitoringServiceActions\InsertOrUpdateHotelSettingsAction.cs" />
+    <Compile Include="KIOSKCommands\MonitoringServiceActions\InsertOrUpdateKIOSKMachineDetailsAction.cs" />
+    <Compile Include="KIOSKCommands\MonitoringServiceActions\InsertOrUpdateMachineAppDetailAction.cs" />
+    <Compile Include="KIOSKCommands\MonitoringServiceActions\InsertOrUpdateMachineDriveInfoAction.cs" />
+    <Compile Include="KIOSKCommands\MonitoringServiceActions\InsertOrUpdatePMSSettingsAction.cs" />
+    <Compile Include="KIOSKCommands\MonitoringServiceActions\InsertOrUpdateRoomKeyServerSettingsAction.cs" />
+    <Compile Include="KIOSKCommands\MonitoringServiceActions\InsertOrUpdateVideoSettingsAction.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\IOS.D2S.Core\IOS.D2S.Core.csproj">
+      <Project>{390f2203-ee5f-482c-84af-49ef00e3398e}</Project>
+      <Name>IOS.D2S.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IOS.D2S.DataConnector\IOS.D2S.DataConnector.csproj">
+      <Project>{88a58617-05d6-4486-b297-73e5581837b3}</Project>
+      <Name>IOS.D2S.DataConnector</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,123 @@
+﻿<header class="page-header">
+    <h1 class="page-title">Assign Permissions {{test}}</h1>
+    <div class="breadcrumb-container">
+        <ul class="breadcrumb">
+           
+        </ul>
+    </div>
+</header>
+<section class="main-content">
+   
+    <div class="row">
+        <div ng-show="loadingRoles">
+            Loading...
+        </div>
+        <div class="role-detail" >
+            <span class="detail-box inline" ng-repeat="role in roles">
+                <label class="detail-label">{{role.Name}}</label>
+                <label class="detail-data">
+                    <button type="button" value="edit" ng-click="editClick(role)" title="Edit">
+                        <i class="fa fa-pencil"></i>Assign
+                    </button>
+                    
+                </label>
+            </span>
+        </div>
+        <div ng-show="loadingPermissions">
+            Loading...
+        </div>    
+        <div class="tree-list" ng-show="showTree">
+            <div class="alert alert-success" ng-show="assignPermissionSuccess">
+                Successfully assigned the permissions.
+            </div>
+            <ul class="list-group">
+                <li ng-repeat="module in modules" class="list-group-item">
+                    <input type="button" value="{{module.btn_text}}" ng-click="toggleModule(module)"  class="node-btn">
+                    <label class="tree-node">{{module.DisplayName}}</label>
+                    <ul ng-show="module.show">
+                        <li ng-repeat="feature in module.Features" class="list-group-item">
+                            <label class="tree-node">
+                                <label class="fancy-input checkbox">
+                                    <input type="checkbox" ng-click="checkFeature(feature)" ng-model="feature.IsActive" />
+                                    <span class="fancy-input-inner"></span>
+                                </label>
+                                {{feature.DisplayName}} 
+
+                                <ul>
+                                    <li ng-repeat="operation in feature.operations">
+                                        <input type="radio" ng-model="operation.checked" name="operation" ng-value="true"  ng-click="operationClick(feature, operation)" />
+                                         {{operation.DisplayName}} -- {{operation.checked}}
+                                    </li>
+                                </ul>
+                            </label>
+
+                        </li>
+                    </ul>
+                 
+                </li>
+
+
+            </ul>
+            <input type="button" class="btn btn-success" value="Assign" ng-click="assignPermissions()" />
+        </div>
+
+       
+
+    </div>
+</section>
+
+
+<!--Modal-->
+<div class="modal fade" id="addCoupon" role="dialog" aria-labelledby="gridSystemModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="gridSystemModalLabel">Add New Coupon</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="form">
+                        <div class="form-group col-sm-6">
+                            <label for="first-name">Coupon ID</label>
+                            <input type="text" class="form-control" />
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="first-name">Amount ($)</label>
+                            <input type="text" class="form-control" />
+                        </div>
+                        <div class="form-group col-sm-12">
+                            <label for="first-name">Coupon Name</label>
+                            <input type="text" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Status</label>
+                            <div class="col-xs-2">
+                                <label class="radio-btn">
+                                    <input type="radio" name="status" />
+                                    <label class="radio-btn-inner"></label>
+                                </label>
+                                Active
+                            </div>
+                            <div class="col-xs-3">
+                                <label class="radio-btn">
+                                    <input type="radio" name="status" />
+                                    <label class="radio-btn-inner"></label>
+                                </label>
+                                Inactive
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+

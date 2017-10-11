@@ -1,0 +1,275 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-ng-app="d2cApp">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>eMCS - eCoupon System</title>
+
+    <link rel="stylesheet" href="css/lib/bootstrap.min.css" type="text/css">
+    <link href="css/lib/datepicker.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/lib/icomoon.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/style2.css" type="text/css">
+</head>
+<body ng-controller="headerCtrl">
+    <header class="header {{userLoggedIn}}">
+        <h1 class="logo">eMCS</h1>
+        <button class="nav-toggle btn btn-primary {{btnClass}}" ng-click="openNavigation()">
+            <i class="icon-menu in"></i>
+            <i class="icon-cross out"></i>
+        </button>
+        <div class="user-det-wrp {{userStatus}}" ng-click="openUserStatusViewClick()">
+            <h2 class="login-det">
+                <a>
+                    <span class="name">Firstname Lastname</span>
+                    <span class="avatar">
+                        <img src="images/userdefault.png" />
+                        <i class="user-status online"></i>
+                    </span>
+                </a>
+            </h2>
+            <ul class="user-option">
+                <li class="mob-user-name">
+                    <h2>Firstname</h2>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="icon-profile"></i><span class="data-label">Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="icon-cog"></i><span class="data-label">Setings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="icon-exit"></i><span class="data-label">Log Out</span>
+                    </a>
+                </li>
+                <li class="devider"></li>
+                <li>
+                    <span class="grp-lbl">Status</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="st-ind online"></i><span class="data-label">Online</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="st-ind offline"></i><span class="data-label">Offline</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="st-ind away"></i><span class="data-label">Away</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="st-ind busy"></i><span class="data-label">Busy</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="body {{bodyClass}}  {{userLoggedIn}}">
+        <aside class="left-nav" ng-controller="navigationCtrl">
+            <ul class="navigation-list" id="accordion">
+                <li ng-repeat="module in modules">
+                    <a href="{{module.NavigationUrl}}" class="active">
+                        <i class="icon-home"></i>
+                        <span class="nav-label">{{module.DisplayName}}</span>
+                    </a>
+                    <a ng-click="openSubMenu(module)" class="collapse-btn">
+                        <i class="icon-minus up"></i>
+                        <i class="icon-plus down"></i>
+                    </a>
+                    <ul  ng-show="module.showSubMenu">
+                        <li ng-repeat="feature in module.Features">
+                            <a href="{{feature.NavigationUrl}}">
+                                <i class="icon-search"></i>
+                                <span class="nav-label" style="color:white;">{{feature.DisplayName}}</span>
+                            </a>
+                        </li>
+                    <!--<li>
+                            <a href="#/uploadcsv">
+                                <i class="icon-upload2"></i>
+                                <span class="nav-label">Upload CSV</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="icon-stats-dots"></i>
+                                <span class="nav-label">Statistics</span>
+                            </a>
+                        </li>  -->
+                    </ul>
+                </li>
+               <!-- <li>
+                    <a href="#" class="active">
+                        <i class="icon-home"></i>
+                        <span class="nav-label">Home</span>
+                    </a>
+                </li>
+                <li class="{{menuStatus}}">
+                    <a href="#/students">
+                        <i class="icon-users"></i>
+                        <span class="nav-label">Students</span>
+                    </a>
+                    <a ng-click="openMenuStatusViewClick()" class="collapse-btn">
+                        <i class="icon-minus up"></i>
+                        <i class="icon-plus down"></i>
+                    </a>
+                    <ul class="nav-sub">
+                        <li>
+                            <a href="#/students">
+                                <i class="icon-search"></i>
+                                <span class="nav-label">Find Students</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#/uploadcsv">
+                                <i class="icon-upload2"></i>
+                                <span class="nav-label">Upload CSV</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="icon-stats-dots"></i>
+                                <span class="nav-label">Statistics</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="{{menuCouponStatus}}">
+                    <a href="#/coupons">
+                        <i class="icon-ticket"></i>
+                        <span class="nav-label">Coupons</span>
+                    </a>
+                    <a ng-click="openMenuCouponStatusViewClick()" class="collapse-btn">
+                        <i class="icon-minus up"></i>
+                        <i class="icon-plus down"></i>
+                    </a>
+                    <ul class="nav-sub">
+                        <li>
+                            <a href="#/coupons">
+                                <i class="icon-search"></i>
+                                <span class="nav-label">Find Coupons</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="icon-paste"></i>
+                                <span class="nav-label">Reports</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li calss="{{menuReportsStatus}}">
+                    <a href="#/reports">
+                        <i class="icon-clipboard"></i>
+                        <span class="nav-label">Reports</span>
+                    </a>
+                    <a ng-click="openMenuReportStatusViewClick()" class="collapse-btn">
+                        <i class="icon-minus up"></i>
+                        <i class="icon-plus down"></i>
+                    </a>
+                    <ul class="nav-sub">
+                        <li>
+                            <a href="#/reports">
+                                <i class="icon-calendar"></i>
+                                <span class="nav-label">Report by Date</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li calss="{{menuReportsStatus}}">
+                    <a href="#/admin">
+                        <i class="icon-clipboard"></i>
+                        <span class="nav-label">Admin</span>
+                    </a>
+                </li>
+                -->
+            </ul>
+        </aside>
+        <section class="body-area" ng-view></section>
+    </div>
+
+    <!-- Java script libs 
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+    <script src="js/lib/bootstrap-datepicker.js"></script>
+    <script src="js/lib/bootstrap-timepicker.js"></script>
+    <script src="js/lib/angular.min.js"></script>
+    <script src="js/lib/angular-route.min.js"></script>
+    <script src="js/lib/angular-resource.min.js"></script>
+    <script src="js/lib/angular-local-storage.min.js"></script>
+    <script src="js/lib/ui-bootstrap.min.js"></script>
+    <script src="js/lib/ui-bootstrap-tpls.js"></script> -->
+
+    <!-- JQuery -->
+    <script src="js/lib/jquery/dist/jquery.min.js"></script>
+    <!-- JQuery UI -->
+    <script src="js/lib/jquery-ui/jquery-ui.min.js"></script>
+    <script src="js/lib/jquery-custom-scrollbar/jquery.custom-scrollbar.js"></script>
+
+    <!-- AngularJS -->
+    <script src="js/lib/angular/angular.js"></script>
+    <script src="js/lib/angular-animate/angular-animate.min.js"></script>
+    <script src="js/lib/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="js/lib/angular-router/angular-route.min.js"></script>
+    <script src="js/lib/angular-local-storage/dist/angular-local-storage.js"></script>
+    <script src='js/lib/moment/min/moment.min.js'></script>
+    <script src='js/lib/angular-moment/angular-moment.min.js'></script>
+
+    <!--Bootstrap-->
+    <script src="js/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="js/lib/angular-bootstrap/ui-bootstrap.min.js"></script>
+    <script src="js/lib/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    
+
+
+    <script src="js/lib/angular-file-upload/dist/angular-file-upload.min.js"></script>
+    <script src="js/lib/angular-local-storage/dist/angular-local-storage.js"></script>
+
+    <script src="js/lib/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="js/lib/isteven-angular-multiselect/isteven-multi-select.js"></script>
+    <script src="js/lib/underscore/underscore-min.js"></script>
+    <script src="js/lib/ng-table/dist/ng-table.min.js"></script>
+    <script src="js/lib/bootstrap3-dialog/dist/js/bootstrap-dialog.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.5/socket.io.min.js"></script>
+    <script src="js/lib/angular-underscore-module/angular-underscore-module.js"></script>
+    <script src="js/lib/angular-ui-grid/ui-grid.js"></script>
+    <script src="js/lib/crypto-js/crypto-js.js"></script>
+    <script src="js/lib/angular-bootstrap-colorpicker/js/bootstrap-colorpicker-module.min.js"></script>
+   
+
+    <script src="js/app.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/services/authorizationSvc.js"></script>
+    <script src="js/services/util.js"></script>
+    <script src="js/services/machineSettingsSvc.js"></script>
+
+
+    <!-- Controlers -->
+    <script src="js/controllers/homeCtrl.js"></script>
+    <script src="js/controllers/managecouponsCtrl.js"></script>
+    <script src="js/controllers/managereportsCtrl.js"></script>
+    <script src="js/controllers/managestdentsCtrl.js"></script>
+    <script src="js/controllers/headerCtrl.js"></script>
+    <script src="js/controllers/navigationCtrl.js"></script>
+    <script src="js/controllers/loginCtrl.js"></script>
+    <script src="js/controllers/uploadcsvCtrl.js"></script>
+    <script src="js/controllers/admin/adminCtrl.js"></script>
+    <script src="js/controllers/kiosk/dashboardCtrl.js"></script>
+    <script src="js/controllers/kiosk/commandProfileCtrl.js"></script>
+    <script src="js/controllers/assignPermission.js"></script>
+    <script src="js/controllers/kiosk/machineSettingsCtrl.js"></script>
+   
+
+</body>
+</html>

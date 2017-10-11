@@ -1,0 +1,488 @@
+﻿<header class="page-header">
+    <h1 class="page-title">Find Students</h1>
+    <div class="breadcrumb-container">
+        <ul class="breadcrumb">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Level 2</a>
+            </li>
+            <li class="active">
+                <span>Level 3</span>
+            </li>
+        </ul>
+    </div>
+</header>
+<section class="main-content">
+    <div class="row">
+        <div class="col-md-9 form-div">
+            <div class="form-inline">
+                <div class="form-group">
+                    <input type="text" placeholder="Student ID" size="7" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="First Name" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Last Name" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <select class="form-control">
+                        <option>Grade</option>
+                        <optgroup label="Grade 1">
+                            <option>1 - A</option>
+                            <option>1 - B</option>
+                            <option>1 - C</option>
+                            <option>1 - D</option>
+                            <option>1 - E</option>
+                        </optgroup>
+                        <optgroup label="Grade 2">
+                            <option>2 - A</option>
+                            <option>2 - B</option>
+                            <option>2 - C</option>
+                            <option>2 - D</option>
+                            <option>2 - E</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary ico-btn">
+                        <i class="icon-search"></i>Search
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 text-right">
+            <button class="btn btn-primary ico-btn" data-toggle="modal" data-target="#addStd">
+                <i class="icon-user-plus"></i>Add New Student
+            </button>
+        </div>
+    </div>
+    <hr />
+    <div class="row">
+        <div class="col-md-12 table-div">
+            <div class="table-responsive">
+                <table class="table table-striped-vt table-hover">
+                    <thead>
+                        <tr>
+                            <th class="narrow-cell">Student ID</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th class="narrow-cell">Grade</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ASOD0001</td>
+                            <td>John</td>
+                            <td>Smith</td>
+                            <td>11 - B</td>
+                            <td>
+                                <button type="button" class="btn btn-primary btn-expandable" data-expand-label="Profile" data-toggle="modal" data-target="#stdProfile">
+                                    <i class="icon-profile"></i>
+                                </button>
+                                <button type="button" class="btn btn-primary btn-expandable" data-expand-label="Assign" data-toggle="modal" data-target="#stdAssign">
+                                    <i class="icon-user-check"></i>
+                                </button>
+                                <button type="button" class="btn btn-primary btn-expandable" data-expand-label="Usage" data-toggle="modal" data-target="#usage">
+                                    <i class="icon-clipboard"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ASOD0002</td>
+                            <td>Dimuthu</td>
+                            <td>Lakshan</td>
+                            <td>11 - B</td>
+                            <td>
+                                <button type="button" class="btn btn-primary btn-expandable" data-expand-label="Profile" data-toggle="modal" data-target="#stdProfile">
+                                    <i class="icon-profile"></i>
+                                </button>
+                                <button type="button" class="btn btn-primary btn-expandable" data-expand-label="Assign" data-toggle="modal" data-target="#stdAssign">
+                                    <i class="icon-user-check"></i>
+                                </button>
+                                <button type="button" class="btn btn-primary btn-expandable" data-expand-label="Usage" data-toggle="modal" data-target="#usage">
+                                    <i class="icon-clipboard"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ASOD0003</td>
+                            <td>Suresh</td>
+                            <td>Rajgopal</td>
+                            <td>11 - B</td>
+                            <td>
+                                <button type="button" class="btn btn-primary btn-expandable" data-expand-label="Profile" data-toggle="modal" data-target="#stdProfile">
+                                    <i class="icon-profile"></i>
+                                </button>
+                                <button type="button" class="btn btn-primary btn-expandable" data-expand-label="Assign" data-toggle="modal" data-target="#stdAssign">
+                                    <i class="icon-user-check"></i>
+                                </button>
+                                <button type="button" class="btn btn-primary btn-expandable" data-expand-label="Usage" data-toggle="modal" data-target="#usage">
+                                    <i class="icon-clipboard"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ASOD0004</td>
+                            <td>Larelene</td>
+                            <td>Vertudaso</td>
+                            <td>11 - B</td>
+                            <td>
+                                <button type="button" class="btn btn-primary btn-expandable" data-expand-label="Profile" data-toggle="modal" data-target="#stdProfile">
+                                    <i class="icon-profile"></i>
+                                </button>
+                                <button type="button" class="btn btn-primary btn-expandable" data-expand-label="Assign" data-toggle="modal" data-target="#stdAssign">
+                                    <i class="icon-user-check"></i>
+                                </button>
+                                <button type="button" class="btn btn-primary btn-expandable" data-expand-label="Usage" data-toggle="modal" data-target="#usage">
+                                    <i class="icon-clipboard"></i>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--Modal-->
+<div class="modal fade" id="stdProfile" role="dialog" aria-labelledby="gridSystemModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="gridSystemModalLabel">Student Profile</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="form">
+                        <div class="form-group col-sm-6">
+                            <label for="first-name">Student ID</label>
+                            <input type="text" class="form-control" />
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="first-name">Grade</label>
+                            <select class="form-control">
+                                <option>Grade</option>
+                                <optgroup label="Grade 1">
+                                    <option>1 - A</option>
+                                    <option>1 - B</option>
+                                    <option>1 - C</option>
+                                    <option>1 - D</option>
+                                    <option>1 - E</option>
+                                </optgroup>
+                                <optgroup label="Grade 2">
+                                    <option>2 - A</option>
+                                    <option>2 - B</option>
+                                    <option>2 - C</option>
+                                    <option>2 - D</option>
+                                    <option>2 - E</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="first-name">First Name</label>
+                            <input type="text" class="form-control" />
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="first-name">Last Name</label>
+                            <input type="text" class="form-control" />
+                        </div>
+                        <div class="form-group col-sm-12">
+                            <label for="first-name">Address</label>
+                            <textarea class="form-control"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Status</label>
+                            <div class="col-xs-2">
+                                <label class="radio-btn">
+                                    <input type="radio" name="status" />
+                                    <label class="radio-btn-inner"></label>
+                                </label>
+                                Active
+                            </div>
+                            <div class="col-xs-3">
+                                <label class="radio-btn">
+                                    <input type="radio" name="status" />
+                                    <label class="radio-btn-inner"></label>
+                                </label>
+                                Inactive
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+
+
+<div class="modal fade" id="addStd" role="dialog" aria-labelledby="gridSystemModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="H1">Add New Student</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="form">
+                        <div class="form-group col-sm-6">
+                            <label for="first-name">Student ID</label>
+                            <input type="text" class="form-control" />
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="first-name">Grade</label>
+                            <select class="form-control">
+                                <option>Grade</option>
+                                <optgroup label="Grade 1">
+                                    <option>1 - A</option>
+                                    <option>1 - B</option>
+                                    <option>1 - C</option>
+                                    <option>1 - D</option>
+                                    <option>1 - E</option>
+                                </optgroup>
+                                <optgroup label="Grade 2">
+                                    <option>2 - A</option>
+                                    <option>2 - B</option>
+                                    <option>2 - C</option>
+                                    <option>2 - D</option>
+                                    <option>2 - E</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="first-name">First Name</label>
+                            <input type="text" class="form-control" />
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="first-name">Last Name</label>
+                            <input type="text" class="form-control" />
+                        </div>
+                        <div class="form-group col-sm-12">
+                            <label for="first-name">Address</label>
+                            <textarea class="form-control"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Status</label>
+                            <div class="col-xs-2">
+                                <label class="radio-btn">
+                                    <input type="radio" name="status" />
+                                    <label class="radio-btn-inner"></label>
+                                </label>
+                                Active
+                            </div>
+                            <div class="col-xs-3">
+                                <label class="radio-btn">
+                                    <input type="radio" name="status" />
+                                    <label class="radio-btn-inner"></label>
+                                </label>
+                                Inactive
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+
+
+<div class="modal fade" id="stdAssign" role="dialog" aria-labelledby="gridSystemModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="H2">Asign Coupon for <span class="name">(Name here)</span></h4>
+            </div>
+            <div class="modal-body">
+                <div class="table-responsive">
+                    <table class="table table-hover table-striped-vt">
+                        <thead>
+                            <tr>
+                                <th class="narrow-cell">Coupon ID</th>
+                                <th>Coupon Name</th>
+                                <th>Amount</th>
+                                <th class="narrow-cell"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>0001
+                                </td>
+                                <td>Type 3 Coupon
+                                </td>
+                                <td>0001
+                                </td>
+                                <td class="text-center">
+                                    <label class="checkbox">
+                                        <input type="checkbox" />
+                                        <label class="checkbox-inner"></label>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>0001
+                                </td>
+                                <td>Type 1 Coupon
+                                </td>
+                                <td>0001
+                                </td>
+                                <td class="text-center">
+                                    <label class="checkbox">
+                                        <input type="checkbox" />
+                                        <label class="checkbox-inner"></label>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>0001
+                                </td>
+                                <td>Type 2 Coupon
+                                </td>
+                                <td>0001
+                                </td>
+                                <td class="text-center">
+                                    <label class="checkbox">
+                                        <input type="checkbox" />
+                                        <label class="checkbox-inner"></label>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>0001
+                                </td>
+                                <td>Type 4 Coupon
+                                </td>
+                                <td>0001
+                                </td>
+                                <td class="text-center">
+                                    <label class="checkbox">
+                                        <input type="checkbox" />
+                                        <label class="checkbox-inner"></label>
+                                    </label>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+
+<div class="modal fade" id="usage" role="dialog" aria-labelledby="gridSystemModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="H3">Usage</h4>
+            </div>
+            <div class="modal-body">
+                <div class="table-responsive">
+                    <table class="table table-hover table-striped-vt">
+                        <thead>
+                            <tr>
+                                <th class="narrow-cell">Coupon ID</th>
+                                <th>Stall Name</th>
+                                <th>Amount</th>
+                                <th class="narrow-cell"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>0001
+                                </td>
+                                <td>Upper Canteen
+                                </td>
+                                <td>3
+                                </td>
+                                <td class="text-center">
+                                    <label class="checkbox">
+                                        <input type="checkbox" />
+                                        <label class="checkbox-inner"></label>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>0001
+                                </td>
+                                <td>Upper Canteen
+                                </td>
+                                <td>4
+                                </td>
+                                <td class="text-center">
+                                    <label class="checkbox">
+                                        <input type="checkbox" />
+                                        <label class="checkbox-inner"></label>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>0001
+                                </td>
+                                <td>Main Canteen
+                                </td>
+                                <td>2
+                                </td>
+                                <td class="text-center">
+                                    <label class="checkbox">
+                                        <input type="checkbox" />
+                                        <label class="checkbox-inner"></label>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>0001
+                                </td>
+                                <td>Upper Canteen
+                                </td>
+                                <td>3
+                                </td>
+                                <td class="text-center">
+                                    <label class="checkbox">
+                                        <input type="checkbox" />
+                                        <label class="checkbox-inner"></label>
+                                    </label>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->

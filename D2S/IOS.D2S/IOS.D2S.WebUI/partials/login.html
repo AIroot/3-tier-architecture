@@ -1,0 +1,43 @@
+﻿<div class="body login">
+        <h1 class="logo">D2C</h1>
+        <div class="col-md-4 col-md-push-4">
+            <div class="login-panel panel">
+                <div class="panel-heading">
+                    <h2>Log in</h2>
+                </div>
+                <div class="panel-body">
+                    <p>Please log in to continue</p>
+                    <div class="form-horizontal">
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <input type="email" ng-model="credentials.UserName" class="form-control has-icon" placeholder="Email">
+                                <i class="input-ico icon-user"></i>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <input type="password" ng-model="credentials.Password" class="form-control has-icon" placeholder="Password">
+                                <i class="input-ico icon-key"></i>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <a href="#" class="forgot-pw">Forgot Your Password?</a>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <button ng-click="loginClick()" class="btn btn-block btn-primary ico-btn text-center">
+                                    <i class="icon-lock"></i>Log In
+                                </button>
+                                <hr>
+                                <button class="btn btn-block btn-success ico-btn text-center">
+                                    <i class="icon-user-plus"></i>Create an Account
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

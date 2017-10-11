@@ -1,0 +1,5 @@
+C:\Users\Anuruddha\Documents\IOSversionControl\D2S\IOS.D2S\IOS.D2S.WebUI\bin\IOS.D2S.WebUI.dll
+C:\Users\Anuruddha\Documents\IOSversionControl\D2S\IOS.D2S\IOS.D2S.WebUI\bin\IOS.D2S.WebUI.pdb
+C:\Users\Anuruddha\Documents\IOSversionControl\D2S\IOS.D2S\IOS.D2S.WebUI\obj\Debug\IOS.D2S.WebUI.dll
+C:\Users\Anuruddha\Documents\IOSversionControl\D2S\IOS.D2S\IOS.D2S.WebUI\obj\Debug\IOS.D2S.WebUI.pdb
+C:\Users\Anuruddha\Documents\IOSversionControl\D2S\IOS.D2S\IOS.D2S.WebUI\obj\Debug\IOS.D2S.WebUI.csprojResolveAssemblyReference.cache

@@ -1,0 +1,14 @@
+{
+  "name": "jquery-custom-scrollbar",
+  "homepage": "https://github.com/mzubala/jquery-custom-scrollbar",
+  "version": "0.5.5",
+  "_release": "0.5.5",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.5.5",
+    "commit": "a8a30b9ea5edffa26e0acb78573f8916b8ac9450"
+  },
+  "_source": "https://github.com/mzubala/jquery-custom-scrollbar.git",
+  "_target": "0.5.x",
+  "_originalSource": "jquery-custom-scrollbar"
+}

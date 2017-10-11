@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{390F2203-EE5F-482C-84AF-49EF00E3398E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IOS.D2S.Core</RootNamespace>
+    <AssemblyName>IOS.D2S.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\Lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DomainObjects\AssignRolePrivilegeRequest.cs" />
+    <Compile Include="DomainObjects\Branch.cs" />
+    <Compile Include="DomainObjects\CommandForProfile.cs" />
+    <Compile Include="DomainObjects\CommandProfile.cs" />
+    <Compile Include="DomainObjects\ConfigAppSettings.cs" />
+    <Compile Include="DomainObjects\ConfigEmailSettings.cs" />
+    <Compile Include="DomainObjects\ConfigHotelSettings.cs" />
+    <Compile Include="DomainObjects\ConfigKeyServerSettings.cs" />
+    <Compile Include="DomainObjects\ConfigPMSSettings.cs" />
+    <Compile Include="DomainObjects\ConfigVideoSettings.cs" />
+    <Compile Include="DomainObjects\LogCheckInDropOff.cs" />
+    <Compile Include="DomainObjects\LogCheckInStat.cs" />
+    <Compile Include="DomainObjects\LogCheckOutStat.cs" />
+    <Compile Include="DomainObjects\LogDBSTrans.cs" />
+    <Compile Include="DomainObjects\LogDevicesStat.cs" />
+    <Compile Include="DomainObjects\LogGuestArrivalForm.cs" />
+    <Compile Include="DomainObjects\LogGuestPaymentReceipt.cs" />
+    <Compile Include="DomainObjects\LogGuestScanData.cs" />
+    <Compile Include="DomainObjects\LogGuestScanImage.cs" />
+    <Compile Include="DomainObjects\LogTaxInvoice.cs" />
+    <Compile Include="DomainObjects\MachineAppDetail.cs" />
+    <Compile Include="DomainObjects\MachineDetails.cs" />
+    <Compile Include="DomainObjects\MachineDriveInfo.cs" />
+    <Compile Include="DomainObjects\RolePrivilage.cs" />
+    <Compile Include="DomainObjects\ScheduledCommand.cs" />
+    <Compile Include="DomainObjects\UserGroup.cs" />
+    <Compile Include="DomainObjects\Credential.cs" />
+    <Compile Include="DomainObjects\Feature.cs" />
+    <Compile Include="DomainObjects\Operation.cs" />
+    <Compile Include="DomainObjects\UserRole.cs" />
+    <Compile Include="DomainObjects\User.cs" />
+    <Compile Include="DomainObjects\Module.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\FileLogger.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

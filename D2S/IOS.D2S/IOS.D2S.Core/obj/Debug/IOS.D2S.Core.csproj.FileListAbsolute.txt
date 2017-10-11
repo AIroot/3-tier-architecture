@@ -1,0 +1,5 @@
+C:\Users\Anuruddha\Documents\IOSversionControl\D2S\IOS.D2S\IOS.D2S.Core\bin\Debug\IOS.D2S.Core.dll
+C:\Users\Anuruddha\Documents\IOSversionControl\D2S\IOS.D2S\IOS.D2S.Core\bin\Debug\IOS.D2S.Core.pdb
+C:\Users\Anuruddha\Documents\IOSversionControl\D2S\IOS.D2S\IOS.D2S.Core\bin\Debug\log4net.dll
+C:\Users\Anuruddha\Documents\IOSversionControl\D2S\IOS.D2S\IOS.D2S.Core\obj\Debug\IOS.D2S.Core.dll
+C:\Users\Anuruddha\Documents\IOSversionControl\D2S\IOS.D2S\IOS.D2S.Core\obj\Debug\IOS.D2S.Core.pdb

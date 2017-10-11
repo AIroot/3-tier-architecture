@@ -1,0 +1,231 @@
+﻿<header class="page-header">
+    <h1 class="page-title">User Administration</h1>
+    <div class="breadcrumb-container">
+        <ul class="breadcrumb">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li class="active">
+                <span>Admin</span>
+            </li>
+        </ul>
+    </div>
+</header>
+<section class="main-content">
+    <uib-tabset active="active">
+        <uib-tab index="0">
+            <uib-tab-heading>
+                <i class="icon-user"></i> User
+            </uib-tab-heading>
+            <div class="ui-tab-content">
+                <div class="">
+                    <div class="legend">
+                        <label class="legend-label">Basic info</label>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label class="control-label">Employee No.</label>
+                                    <input type="text" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label class="control-label">First Name</label>
+                                    <input type="text" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label class="control-label">Last Name</label>
+                                    <input type="text" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label class="control-label">Gender</label>
+                                    <div class="">
+                                        <label class="radio-btn">
+                                            <input type="radio" name="gender" />
+                                            <span class="radio-btn-inner"></span>
+                                        </label>  Male
+                                        <label class="radio-btn">
+                                            <input type="radio" name="gender" />
+                                            <span class="radio-btn-inner"></span>
+                                        </label> Female
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label class="control-label">Date of Birth</label>
+                                    <input type="text" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label class="control-label">Join Date</label>
+                                    <input type="text" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="legend">
+                        <label class="legend-label">Profile info</label>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label class="control-label">Username</label>
+                                    <input type="text" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label class="control-label">Password</label>
+                                    <input type="password" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label class="control-label">Profile Picture</label>
+                                    <input type="file" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="legend">
+                        <label class="legend-label">Settings</label>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label class="control-label">Role ID</label>
+                                    <input type="text" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label class="control-label">Sort Order</label>
+                                    <input type="text" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label class="control-label">Remark</label>
+                                    <textarea type="text" class="form-control"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="form-group">
+                                    <label class="control-label">Is Active?</label>
+                                    <label class="checkbox">
+                                        <input type="checkbox" />
+                                        <span class="checkbox-inner"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="form-group">
+                                    <label class="control-label">System User</label>
+                                    <label class="checkbox">
+                                        <input type="checkbox" />
+                                        <span class="checkbox-inner"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="text-right">
+                            <button class="btn btn-primary ico-btn">
+                                <i class="icon-floppy-disk"></i> Save
+                            </button>
+                            <button class="btn btn-default ico-btn">
+                                <i class="icon-cross"></i> Cancel
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </uib-tab>
+        <uib-tab index="1">
+            <uib-tab-heading>
+                <i class="icon-clipboard"></i> Role
+            </uib-tab-heading>
+            <div class="ui-tab-content">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label class="control-label">Name</label>
+                            <input type="text" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label class="control-label">Sort Order</label>
+                            <input type="text" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="form-group">
+                            <label class="control-label">Is Active?</label>
+                            <div class="">
+                                <label class="checkbox">
+                                    <input type="checkbox" />
+                                    <span class="checkbox-inner"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="form-group">
+                            <label class="control-label">Can Delete?</label>
+                            <div>
+                                <label class="checkbox">
+                                    <input type="checkbox" />
+                                    <span class="checkbox-inner"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <div class="text-right">
+                    <button class="btn btn-primary ico-btn">
+                        <i class="icon-floppy-disk"></i> Save
+                    </button>
+                    <button class="btn btn-default ico-btn">
+                        <i class="icon-cross"></i> Cancel
+                    </button>
+                </div>
+            </div>
+        </uib-tab>
+        <uib-tab index="2">
+            <uib-tab-heading>
+                <i class="icon-users"></i> Group
+            </uib-tab-heading>
+            <div class="ui-tab-content">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label class="control-label">Name</label>
+                            <input type="text" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label class="control-label">Description</label>
+                            <textarea type="text" class="form-control"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <div class="text-right">
+                    <button class="btn btn-primary ico-btn">
+                        <i class="icon-floppy-disk"></i> Save
+                    </button>
+                    <button class="btn btn-default ico-btn">
+                        <i class="icon-cross"></i> Cancel
+                    </button>
+                </div>
+            </div>
+        </uib-tab>
+    </uib-tabset>
+</section>

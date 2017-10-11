@@ -1,0 +1,14 @@
+C:\Users\Anuruddha\Documents\IOSversionControl\D2S\IOS.D2S\IOS.D2S.API\bin\Debug\IOS.D2S.API.dll
+C:\Users\Anuruddha\Documents\IOSversionControl\D2S\IOS.D2S\IOS.D2S.API\bin\Debug\IOS.D2S.API.pdb
+C:\Users\Anuruddha\Documents\IOSversionControl\D2S\IOS.D2S\IOS.D2S.API\bin\Debug\IOS.D2S.BL.dll
+C:\Users\Anuruddha\Documents\IOSversionControl\D2S\IOS.D2S\IOS.D2S.API\bin\Debug\IOS.D2S.Core.dll
+C:\Users\Anuruddha\Documents\IOSversionControl\D2S\IOS.D2S\IOS.D2S.API\bin\Debug\IOS.D2S.Data.dll
+C:\Users\Anuruddha\Documents\IOSversionControl\D2S\IOS.D2S\IOS.D2S.API\bin\Debug\log4net.dll
+C:\Users\Anuruddha\Documents\IOSversionControl\D2S\IOS.D2S\IOS.D2S.API\bin\Debug\IOS.D2S.DataConnector.dll
+C:\Users\Anuruddha\Documents\IOSversionControl\D2S\IOS.D2S\IOS.D2S.API\bin\Debug\IOS.D2S.BL.pdb
+C:\Users\Anuruddha\Documents\IOSversionControl\D2S\IOS.D2S\IOS.D2S.API\bin\Debug\IOS.D2S.Core.pdb
+C:\Users\Anuruddha\Documents\IOSversionControl\D2S\IOS.D2S\IOS.D2S.API\bin\Debug\IOS.D2S.Data.pdb
+C:\Users\Anuruddha\Documents\IOSversionControl\D2S\IOS.D2S\IOS.D2S.API\bin\Debug\IOS.D2S.DataConnector.pdb
+C:\Users\Anuruddha\Documents\IOSversionControl\D2S\IOS.D2S\IOS.D2S.API\obj\Debug\IOS.D2S.API.csprojResolveAssemblyReference.cache
+C:\Users\Anuruddha\Documents\IOSversionControl\D2S\IOS.D2S\IOS.D2S.API\obj\Debug\IOS.D2S.API.dll
+C:\Users\Anuruddha\Documents\IOSversionControl\D2S\IOS.D2S\IOS.D2S.API\obj\Debug\IOS.D2S.API.pdb
