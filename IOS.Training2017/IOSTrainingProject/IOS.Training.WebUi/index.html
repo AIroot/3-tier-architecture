@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="trainingApp">
+<head>
+    <title>Training App</title>
+
+    <!--CSS-->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h1>Training App</h1>
+    </header>
+
+    <div>
+        <ng-view></ng-view>
+    </div>
+
+    <footer>
+        <span>iOnesoft solutions Pte Ltd.</span>
+    </footer>
+
+    <!--Libs-->
+    <script src="js/libs/jquery.min.js"></script>
+    <script src="js/libs/bootstrap.min.js"></script>
+    <script src="js/libs/angular.min.js"></script>
+    <script src="js/libs/angular-route.min.js"></script>
+
+    <!--Main JS-->
+    <script src="js/app.js"></script>
+    <script src="js/configs.js"></script>
+
+    <!--Controllers-->
+    <script src="js/controllers/employee/employeesCtrl.js"></script>
+    <script src="js/controllers/employee/employeeDetailsCtrl.js"></script>
+
+    <!--Services-->
+    <script src="js/services/apiCallsSvc.js"></script>
+</body>
+</html>

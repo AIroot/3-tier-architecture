@@ -1,0 +1,85 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOS.Training.Core", "IOS.Training.Core\IOS.Training.Core.csproj", "{D5ACE6A4-94B7-4F01-970A-407B2E075376}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOS.Training.BLL", "IOS.Training.BLL\IOS.Training.BLL.csproj", "{96DB4910-9668-4A5B-917C-FCB41D012FAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOS.Training.DAL", "IOS.Training.DAL\IOS.Training.DAL.csproj", "{62D1F8A9-5028-45EA-8670-DBBA0EE4AF9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOS.Training.API", "IOS.Training.API\IOS.Training.API.csproj", "{AB767E1C-2EEC-495E-8B36-5B394049C21E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOS.Training.WebApi", "IOS.Training.WebApi\IOS.Training.WebApi.csproj", "{735E9F95-F092-40D4-AA68-A01B1DE0FB35}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOS.Training.DbFactory", "IOS.Training.DbFactory\IOS.Training.DbFactory.csproj", "{E0BEB884-2499-4503-82F5-A4D4D0900F6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOS.Training.WebUi", "IOS.Training.WebUi\IOS.Training.WebUi.csproj", "{53D0B676-7F73-4838-A587-881993234705}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 8
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://ionesoft.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = IOS.Training.Core\\IOS.Training.Core.csproj
+		SccProjectName1 = IOS.Training.Core
+		SccLocalPath1 = IOS.Training.Core
+		SccProjectUniqueName2 = IOS.Training.BLL\\IOS.Training.BLL.csproj
+		SccProjectName2 = IOS.Training.BLL
+		SccLocalPath2 = IOS.Training.BLL
+		SccProjectUniqueName3 = IOS.Training.DAL\\IOS.Training.DAL.csproj
+		SccProjectName3 = IOS.Training.DAL
+		SccLocalPath3 = IOS.Training.DAL
+		SccProjectUniqueName4 = IOS.Training.API\\IOS.Training.API.csproj
+		SccProjectName4 = IOS.Training.API
+		SccLocalPath4 = IOS.Training.API
+		SccProjectUniqueName5 = IOS.Training.WebApi\\IOS.Training.WebApi.csproj
+		SccProjectName5 = IOS.Training.WebApi
+		SccLocalPath5 = IOS.Training.WebApi
+		SccProjectUniqueName6 = IOS.Training.DbFactory\\IOS.Training.DbFactory.csproj
+		SccProjectName6 = IOS.Training.DbFactory
+		SccLocalPath6 = IOS.Training.DbFactory
+		SccProjectUniqueName7 = IOS.Training.WebUi\\IOS.Training.WebUi.csproj
+		SccProjectName7 = IOS.Training.WebUi
+		SccLocalPath7 = IOS.Training.WebUi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D5ACE6A4-94B7-4F01-970A-407B2E075376}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5ACE6A4-94B7-4F01-970A-407B2E075376}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5ACE6A4-94B7-4F01-970A-407B2E075376}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5ACE6A4-94B7-4F01-970A-407B2E075376}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96DB4910-9668-4A5B-917C-FCB41D012FAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96DB4910-9668-4A5B-917C-FCB41D012FAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96DB4910-9668-4A5B-917C-FCB41D012FAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96DB4910-9668-4A5B-917C-FCB41D012FAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62D1F8A9-5028-45EA-8670-DBBA0EE4AF9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62D1F8A9-5028-45EA-8670-DBBA0EE4AF9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62D1F8A9-5028-45EA-8670-DBBA0EE4AF9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62D1F8A9-5028-45EA-8670-DBBA0EE4AF9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB767E1C-2EEC-495E-8B36-5B394049C21E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB767E1C-2EEC-495E-8B36-5B394049C21E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB767E1C-2EEC-495E-8B36-5B394049C21E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB767E1C-2EEC-495E-8B36-5B394049C21E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{735E9F95-F092-40D4-AA68-A01B1DE0FB35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{735E9F95-F092-40D4-AA68-A01B1DE0FB35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{735E9F95-F092-40D4-AA68-A01B1DE0FB35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{735E9F95-F092-40D4-AA68-A01B1DE0FB35}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0BEB884-2499-4503-82F5-A4D4D0900F6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0BEB884-2499-4503-82F5-A4D4D0900F6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0BEB884-2499-4503-82F5-A4D4D0900F6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0BEB884-2499-4503-82F5-A4D4D0900F6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53D0B676-7F73-4838-A587-881993234705}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53D0B676-7F73-4838-A587-881993234705}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53D0B676-7F73-4838-A587-881993234705}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53D0B676-7F73-4838-A587-881993234705}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

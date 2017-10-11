@@ -1,0 +1,41 @@
+﻿<div class="panel">
+    <div class="panel-body">
+
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table table-bordered table-striped">
+                    <colgroup>
+                        <col width="20%" />
+                        <col width="20%" />
+                        <col width="20%" />
+                        <col width="20%" />
+                        <col width="5%" />
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Email</th>
+                            <th>Mobile</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="emp in employeeList">
+                            <td>{{emp.FirstName}}</td>
+                            <td>{{emp.LastName}}</td>
+                            <td>{{emp.Email}}</td>
+                            <td>{{emp.MobileNo}}</td>
+                            <td>
+                                <button class="btn btn-default" ng-click="employeeDetlClickedEvent(emp)">
+                                    Edit
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+</div>
